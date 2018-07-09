@@ -6,13 +6,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index-styles.css">
+</head>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="/swipe.html">Cravings</a>
+  <a href="#">Locations</a>
+  <a href="#">Contact</a>
+</div>
 
+<div id="main">
+  <!-- <h2>Sidenav Push Example</h2>
+  <p>Click on the el ement below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p> -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+     <div class= "text-center center-block img-responsive title"></div>
+  </span>
+</div>
 <style>
     body {
       background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color:#000;
+      /* color:#000; */
       margin: 0;
       padding: 0;
     }
@@ -23,12 +42,20 @@
     }
     .swiper-slide {
       background-position: center;
-      background-size: cover;
+      /* background-size: cover; */
       width: 300px;
       height: 300px;
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 
     }
+    .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: transparent;   /* controls color of bullet*/
+    opacity: .2;
+}
   </style>
 </head>
 <body>
@@ -47,6 +74,7 @@
 <div class="swiper-slide" style="background-image: url('../img/logo.png')"></div>
 </div>
 
+
 <div class="swiper-pagination"></div>
 </div>
 
@@ -54,12 +82,15 @@
 
 <script>
     var swiper = new Swiper('.swiper-container', {
+      initialSlide: 4,
+      spaceBetween: 25,
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
+      loop: 'true',
       coverflowEffect: {
-        rotate: 50,
+        rotate: 0, /*controls the tilt of the covers*/
         stretch: 0,
         depth: 100,
         modifier: 1,
@@ -70,5 +101,10 @@
       },
     });
   </script>
+  <!--start of javascript	 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+  <!-- end of javascript -->
 </body>
 </html>
