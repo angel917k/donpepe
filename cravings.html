@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index-styles.css">
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="/cravings.html">Cravings</a>
+    <a href="#">Locations</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <!-- <h2>Sidenav Push Example</h2>
+    <p>Click on the el ement below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p> -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+       <div class= "text-center center-block img-responsive title"></div>
+    </span>
+
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+<!--start of javascript	 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <!-- Swiper JS -->
+  <!-- <script src="js/swiper.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.bundle.js"></script>
+
+<!-- end of javascript -->
+</body>
+</html>
