@@ -16,7 +16,7 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    border-right: solid 2px #F65539;
+    /* border-right: solid 2px #F65539; */
 }
 
 .sidenav a {
